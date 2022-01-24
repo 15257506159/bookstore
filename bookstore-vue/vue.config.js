@@ -9,5 +9,13 @@ module.exports = {
         'views': '@/views',
       }
     }
+  },
+  chainWebpack: config => {
+    config
+      .plugin('html')
+      .tap(args => {
+        args[0].title= '古典文学网'
+        return args
+      })
   }
 }

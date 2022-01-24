@@ -1,21 +1,27 @@
 <template>
-  <div class="login"  style="margin-top: 0%">
-  </div>
+<div class="login"></div>
+
+
 </template>
 
 <script>
-export default {
+  export default {
+    data() {
 
-}
+    },
+  
+  }
 </script>
 
 <style>
-.login{
-    width: 100vw;
-    height: 100vh;
-    background: url('../../assets/images/home/login.jpg') no-repeat ;
-    background-size: 100% 100%;
-    background-position: left top -72px;
-    position: relative;
+.login {
+  opacity:0.5;
+  background: url("../../assets/images/home/login.jpg") no-repeat ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100%;
+  position: fixed;
+  width: 100%;
 }
 </style>
